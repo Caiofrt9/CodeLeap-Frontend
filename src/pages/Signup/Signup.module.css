@@ -38,6 +38,7 @@
     width: 28.25rem;
     height: 2rem;
     border: 2px solid var(--gray-light);
+    padding: 0.5rem;
     border-radius: 8px;
 }
 
