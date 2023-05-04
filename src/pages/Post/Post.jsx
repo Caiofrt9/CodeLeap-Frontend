@@ -41,7 +41,7 @@ const Post = () => {
     localStorage.setItem("user_posts", JSON.stringify(atualPosts));
 
 
-    axios.post("http://localhost:3001/api/v1/post", dataPostServer, {
+    axios.post("https://codeleapback.herokuapp.com/api/v1/post", dataPostServer, {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"
