@@ -1,0 +1,285 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    margin: 0 auto;
+    width: 54rem;
+    height: auto;
+    background-color: var(--white-bg);
+    padding-bottom: 1rem;
+}
+
+.postHeader{
+    width: 100%;
+    height: 5rem;
+    padding: 1.6rem 2.31rem;
+    font-weight: 700;
+    font-size: 1.37rem;
+    color: var(--white-bg);
+    background-color: var(--light-blue);
+}
+
+.postForm{
+    width: 95%;
+    height: 22rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid var(--gray-bg);
+    border-radius: 16px;
+    }
+
+.formTitle{
+    font-size: 1.37rem;
+}
+
+.postText{
+    font-weight: 700;
+    font-size: 1.37rem
+}
+
+.postTitle, .postContent{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1rem; 
+    margin: 1.5rem 0;
+     
+}  
+
+.postTitle > input {
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 1px solid var(--gray-variant);
+}
+
+.postContent > textarea {
+    height: 4.6rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+    resize: none;
+    
+}
+
+#postTitle,#postContent {
+    margin-bottom: 0.5rem;
+}
+
+
+.postForm button{
+    width: 6,9rem;
+    height: 2rem;
+    padding: 0.4rem 2rem;
+    border-radius: 8px;
+    float: right;
+    margin-top: 1.2rem;
+    background-color: var(--light-blue);
+    border: none;
+    color: #fff;
+}
+
+.postForm button:disabled {
+    opacity: 0.2;
+}
+
+
+@media (max-width: 1200px) {
+    .content {
+        width: 55rem;
+        height: auto;
+    }
+
+    .postHeader{
+        padding: 1rem;
+        font-size: 2.4rem;
+    }
+
+    .postForm {
+        height: 33rem;
+    }
+
+    .postForm h1{
+        font-size: 1.9rem;
+    }
+
+    .postForm button {
+        width: 9rem;
+        height: 3rem;
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .postTitle, .postContent {
+        font-size: 1.5rem;
+    }
+
+    .postTitle > input{
+        font-size: 1.3rem;;
+        height: 4rem;
+    }
+
+    .postContent > textarea {
+        font-size: 1.3rem;;
+        height: 10rem;
+    }
+
+    .postTitle > input::-webkit-input-placeholder, .postContent > textarea::placeholder{
+        font-size: 1.3rem;
+    }
+
+  
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 60rem;
+    }
+
+    .postHeader{
+        padding: 1rem;
+        font-size: 2.2rem;
+    }
+
+    .postForm h1{
+        font-size: 1.6rem;
+    }
+
+    .postForm button {
+        margin-top: 0.2rem;
+    }
+
+    .postTitle, .postContent {
+        font-size: 1.4rem;
+    }
+
+    .postTitle > input{
+        height: 3rem;
+    }
+
+    .postContent > textarea {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 45rem;
+    }
+
+    .postHeader{
+        padding: 1rem;
+        font-size: 2.2rem;
+    }
+
+    .postForm {
+        height: 25rem;
+    }
+
+    .postForm h1{
+        font-size: 1.6rem;
+    }
+
+    .postForm button {
+        margin-top: 0.2rem;
+    }
+
+    .postTitle, .postContent {
+        font-size: 1.2rem;
+    }
+
+    .postTitle > input{
+        height: 2.5rem;
+    }
+
+    .postContent > textarea {
+        height: 5rem;
+    }
+} 
+
+@media (max-width: 480px) {
+    .content {
+        width: 28rem;
+    }
+
+    .postHeader{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .postForm {
+        height: 20rem;
+    }
+
+    .postForm h1{
+        font-size: 1rem;
+    }
+
+    .postForm button {
+        padding: 0.5rem;
+        width: 5rem;
+        height: 2.5rem;
+        margin-top: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .postTitle, .postContent {
+        font-size: 0.9rem;
+    }
+
+    .postTitle > input{
+        font-size: 1rem;
+        height: 2rem;
+    }
+
+    .postContent > textarea {
+        font-size: 1rem;
+        height: 4.5rem;
+    }
+
+
+    .postTitle > input::-webkit-input-placeholder, .postContent > textarea::placeholder{
+        font-size: 1rem;
+    }
+
+
+} 
+
+@media (max-width: 320px    ) {
+    .content {
+        width: 18rem;
+    }
+
+    .postHeader{
+        padding: 1rem 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .postForm h1{
+        font-size: 1rem;
+    }
+
+    .postForm button {
+        margin-top: 0.2rem;
+    }
+
+    .postTitle, .postContent {
+        font-size: 0.7rem;
+    }
+
+    .postTitle > input{
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+
+    .postContent > textarea {
+        font-size: 0.8rem;
+        height: 4.5rem;
+    }
+
+    .postTitle > input::-webkit-input-placeholder, .postContent > textarea::placeholder{
+        font-size: 0.8rem;
+    }
+} 

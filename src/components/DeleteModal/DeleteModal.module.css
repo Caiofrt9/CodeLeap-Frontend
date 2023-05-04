@@ -1,0 +1,53 @@
+.modalBackground{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1000;
+    
+}
+
+.modalBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41.2rem;
+    height: 9.1rem;
+    padding: 2rem;
+    background-color: var(--white-bg);
+    display: block;
+    border-radius: 16px;
+}
+
+.confirmText{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.modalButtons{
+    margin-top: 1rem;
+    float: right;
+}
+
+.cancelButton, .deleteButton{
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 8px;
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.deleteButton{
+    border: none;
+    background-color: var(--red-variant);
+    color: var(--white-bg);
+}
+
+.cancelButton{
+    border: 1px solid var( --gray-border);
+    background-color: var(--white-bg);
+}

@@ -1,0 +1,75 @@
+.modalBackground{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1000;
+    
+}
+
+.modalBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41.2rem;
+    height: 21rem;
+    padding: 2rem;
+    background-color: var(--white-bg);
+    display: flex;
+    border-radius: 16px;
+}
+
+.editTitle > label, .editContent > label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+} 
+
+.editTitle input {
+    width: 38rem;
+    height: 2rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 1px solid var(--gray-variant);
+}
+
+.editContent textarea{
+    width: 38rem;
+    height: 4.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-variant);
+    resize: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+
+.modalButtons{
+    float: right;
+}
+
+
+.cancelButton, .saveButton{
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.saveButton{
+    border: none;
+    background-color: var(--green);
+    color: var(--white-bg);
+}
+
+.cancelButton{
+    border: 1px solid var( --gray-border);
+    background-color: var(--white-bg);
+}

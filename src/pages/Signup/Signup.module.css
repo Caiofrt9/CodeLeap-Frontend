@@ -1,0 +1,167 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signupContent{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 31.25rem;
+    height: 12.8rem; 
+    background-color: var(--white-bg);
+    border-radius: 16px;
+    border: 2px solid var(--gray-light);
+    padding: 0.06rem;
+}
+
+.containerText{
+    margin: 0 1.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.signupBox{
+    margin: 0 1.5rem;
+}
+
+
+.signupText{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.signupInput{
+    width: 28.25rem;
+    height: 2rem;
+    border: 2px solid var(--gray-light);
+    border-radius: 8px;
+}
+
+.signupInput::placeholder{
+    padding: 0.5rem;
+    font-size: 0.87rem;
+}
+
+.signupBox button {
+    width: 6,9rem;
+    height: 2rem;
+    padding: 0.4rem 2rem;
+    border-radius: 8px;
+    float: right;
+    margin-top: 1.2rem;
+    background-color: var(--light-blue);
+    border: none;
+    color: #fff;
+}
+
+.signupBox button:disabled {
+    opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+    .signupContent{
+        width: 33rem;
+        height: 14rem;
+       padding: 1rem;
+    }
+
+    .containerText{
+        font-size: 1.6rem;
+    }
+
+    .signupText{
+        font-size: 1.3rem;
+    }
+    
+    .signupInput{
+        height: 2.5rem;
+    }
+
+    .signupBox button{
+        width: 7.2rem;
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .signupContent{
+        width: 33rem;
+        height: 14rem;
+       padding: 1rem;
+    }
+
+    .containerText{
+        font-size: 1.6rem;
+    }
+
+    .signupText{
+        font-size: 1.3rem;
+    }
+    
+    .signupInput{
+        height: 2.5rem;
+    }
+
+    .signupBox button{
+        width: 7.2rem;
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .signupContent{
+        width: 25rem;
+        height: 14rem;
+        padding: 1rem;
+    }
+
+    .containerText{
+        font-size: 1rem;
+    }
+
+    .signupText{
+        font-size: 1rem;
+    }
+    
+    .signupInput{
+        width: 23rem;
+        height: 2rem;
+    }
+
+    .signupBox button{
+        width: 6.2rem;
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .signupContent{
+        width: 18rem;
+        height: 11rem;
+        padding: 1rem;
+    }
+
+    .containerText{
+        font-size: 0.9rem;
+    }
+
+    .signupText{
+        font-size: 0.8rem;
+    }
+    
+    .signupInput{
+        width: 16rem;
+        height: 1.3rem;
+    }
+
+    .signupBox button{
+        font-size: 0.8rem;
+        width: 3.8rem;
+        height: 1.3rem;
+        padding: 0.2rem;
+    }
+}
