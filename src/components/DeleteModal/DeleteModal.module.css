@@ -51,3 +51,68 @@
     border: 1px solid var( --gray-border);
     background-color: var(--white-bg);
 }
+
+@media (max-width: 1200px) {
+  
+    .confirmText{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .confirmText{
+        font-size: 1.4rem;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .modalBox{
+        width: 25rem;
+    }
+
+    .confirmText{
+        font-size: 1.2rem;
+    }
+
+    .cancelButton, .deleteButton{
+        width: 10rem;
+        font-size: 0.7rem;
+    }
+    
+} 
+   
+@media (max-width: 480px    ) {
+    .modalBox{
+        width: 25rem;
+    }
+
+    .confirmText{
+        font-size: 1.2rem;
+    }
+
+    .cancelButton, .deleteButton{
+        width: 5rem;
+        font-size: 0.7rem;
+    }
+
+} 
+
+@media (max-width: 320px    ) {
+    .modalBox{
+        width: 18rem;
+    }
+
+    .confirmText{
+        font-size: 0.9rem;
+    }
+
+    .cancelButton, .deleteButton{
+        width: 3.5rem;
+        font-size: 0.7rem;
+    }
+
+} 

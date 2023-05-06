@@ -66,9 +66,182 @@
 .saveButton{
     border: none;
     background-color: var(--green);
+    color: var(--white-bg);
 }
 
 .cancelButton{
     border: 1px solid var( --gray-border);
     background-color: var(--white-bg);
 }
+
+
+@media (max-width: 1200px) {
+    .modalBox{
+        width: 70rem;
+        height: 27rem;
+    }
+
+    .formTitle{
+        font-size: 3rem;
+    }
+
+    .editTitle > label, .editContent > label{
+       font-size: 1.6rem;
+    } 
+    
+    .editTitle input {
+     font-size: 1.3rem;
+     width: 66rem;
+       
+    }
+
+    .editTitle input::placeholder {
+        font-size: 1.3rem;
+          
+       }
+
+    .editContent textarea::placeholder{
+     font-size: 1.3rem;
+    }   
+
+    .editContent textarea{
+     font-size: 1.3rem;
+     width: 66rem;
+     height: 7rem;
+    
+    }
+
+    .cancelButton, .saveButton{
+        width: 7rem;
+        height: 3rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .modalBox{
+        width: 60rem;
+        height: 25rem;
+    }
+
+    .formTitle{
+        font-size: 2rem;
+    }
+
+    .editTitle > label, .editContent > label{
+       font-size: 1.5rem;
+    } 
+    
+    .editTitle input {
+     width: 56rem;
+       
+    }
+
+    .editContent textarea{
+     width: 56rem;
+    
+    }
+
+    .cancelButton, .saveButton{
+        width: 6rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .modalBox{
+        width: 45rem;
+    }
+
+    .formTitle{
+        font-size: 1.5rem;
+    }
+
+    .editTitle > label, .editContent > label{
+       font-size: 1rem;
+    } 
+    
+    .editTitle input {
+     width: 41rem;
+       
+    }
+
+    .editContent textarea{
+     width: 41rem;
+    
+    }
+
+
+    .cancelButton, .saveButton{
+        width: 5rem;
+        font-size: 1rem;
+    }
+
+} 
+   
+@media (max-width: 480px    ) {
+
+    .modalBox{
+        width: 26rem;
+    }
+
+    .formTitle{
+        font-size: 1.5rem;
+    }
+
+    .editTitle > label, .editContent > label{
+       font-size: 1rem;
+    } 
+    
+    .editTitle input {
+     width: 22rem;
+       
+    }
+
+    .editContent textarea{
+     width: 22rem;
+    
+    }
+
+
+    .cancelButton, .saveButton{
+        width: 4rem;
+        font-size: 0.8rem;
+    }
+
+} 
+
+@media (max-width: 320px    ) {
+    .modalBox{
+        width: 18rem;
+    }
+
+    .formTitle{
+        font-size: 1.5rem;
+    }
+
+    .editTitle > label, .editContent > label{
+       font-size: 1rem;
+    } 
+    
+    .editTitle input {
+     width: 14rem;
+       
+    }
+
+    .editContent textarea{
+        width: 14rem;
+    
+    }
+
+
+    .cancelButton, .deleteButton{
+        width: 3.5rem;
+        font-size: 0.7rem;
+    }
+
+} 
