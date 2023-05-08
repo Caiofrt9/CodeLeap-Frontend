@@ -8,12 +8,17 @@ import { faTrashAlt, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import DeleteModal from "../DeleteModal/DeleteModal";
 import EditModal from "../EditModal/EditModal"
 
-const Comment = ({key, title, content, post}) => {
+const Comment = ({key, title, content, post, deleteComment,id}) => {
 
   const [openModal, setOpenModal] = useState(false)
   const [openEditModal, setOpenEditModal] = useState(false)
 
   const postData = post;
+
+  
+  const handleDelete = () => {
+    deleteComment(id);
+  };
 
   return (
     <div className={styles.container}>
@@ -38,7 +43,7 @@ const Comment = ({key, title, content, post}) => {
           <p>{content}</p>
         </div>
       </div>
-      <DeleteModal post={postData} key={key} isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
+      <DeleteModal post={postData} key={key} isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} handleDelete={handleDelete}/>
       <EditModal isOpen={openEditModal} setOpenEditModal={() => setOpenEditModal(!setOpenEditModal)}/>
 </div>
   );
